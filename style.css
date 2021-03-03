@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: auto;
+  width: 500px;
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px 5px rgb(195, 232, 246);
+}
+.text__forCheckbox {
+  margin: 10px;
+}
+.text__input {
+  width: 250px;
+  height: 25px;
+  outline: none;
+  font-size: 20px;
+  padding: 3px 5px;
+  border: none;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 3px;
+  margin: 0 20px 20px 0;
+}
+.text__input:focus::placeholder {
+  color: transparent;
+}
+.add__btn {
+  width: 80px;
+  height: 33px;
+  cursor: pointer;
+  pointer-events: none;
+  border: none;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 3px;
+  color: rgb(146, 146, 146);
+  background-color: rgb(235, 235, 235);
+}
+.one__note {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(130, 184, 197);
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.delete__btn {
+  pointer-events: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.far {
+  font-size: 25px;
+  color: rgb(255, 144, 144);
+  margin-bottom: 2px;
+}
+.checkbox__input:checked ~ .add__btn {
+  background-color: rgb(184, 239, 251);
+  color: rgb(0, 0, 0);
+  border-color: rgb(114, 183, 216);
+  cursor: pointer;
+  pointer-events: initial;
+}
+.checkbox__input:checked ~ .notes__list button {
+  cursor: pointer;
+  pointer-events: initial;
+}
+.checkbox__input:checked ~ .notes__list button .far {
+  color: red;
+}
